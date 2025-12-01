@@ -32,17 +32,6 @@ To run the AI-powered RAG Document Assistant, ensure your environment includes:
 - Supported vector database (e.g., Pinecone, FAISS, Weaviate, Chroma)
 - Access to OpenAI API or other language models (for LLM integration)
 
-**Python dependencies include:**
-- FastAPI
-- Uvicorn
-- pydantic
-- SQLAlchemy
-- langchain
-- openai
-- chromadb (or chosen vector DB client)
-
----
-
 ## Installation
 
 Follow these steps to set up the project locally:
@@ -70,23 +59,7 @@ Follow these steps to set up the project locally:
 
     ```
     OPENAI_API_KEY=your_openai_api_key
-    VECTOR_DB_URL=your_vector_db_url
     ```
-
-4. **Initialize Database**
-
-    If using a relational DB for metadata:
-
-    ```bash
-    alembic upgrade head
-    ```
-
-5. **Run the Backend Server**
-
-    ```bash
-    uvicorn app.main:app --reload
-    ```
----
 
 ## Usage
 
